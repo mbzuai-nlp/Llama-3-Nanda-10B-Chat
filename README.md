@@ -86,7 +86,7 @@ print(get_response(text))
 - **License:** Llama 3
 - **Input:** Text-only data
 - **Output:** Model generates text
-- **Paper :** Coming soon!
+- **Paper :** [Llama-3-Nanda-10B-Chat: An Open Generative Large Language Model for Hindi](https://github.com/mbzuai-nlp/Llama-3-Nanda-10B-Chat/blob/main/Llama-3-Nanda-10B-Chat-paper.pdf)
 
 
 ## Intended Use
