@@ -1,9 +1,8 @@
-
 # Llama-3-Nanda-10B-Chat
 
 <!-- Provide a quick summary of what the model is/does. -->
 
-Llama-3-Nanda-10B-Chat (shortly Nanda) is a 10 billion parameter pre-trained bilingual large language model for both Hindi and English, 
+Llama-3-Nanda-10B-Chat (or Nanda for short) is a 10 billion parameter pre-trained and instruction-tuned bilingual large language model for both Hindi and English, 
 trained on a dataset containing 65 billion Hindi tokens. The model is based on transformer-based decoder-only (LLaMA-3) architecture. It implements Rotary Position Embeddings (RoPE), enabling the model to extrapolate
 to long sequence lengths, providing improved context handling and model precision.
 
@@ -192,14 +191,14 @@ Hindi-only evaluation results:
 | Google/Gemma-2-9b-base                      | 30.2          | 26.9                        | 27.2                         | 27.1                             | 28.2                              | 23.6                               | 48.2                    |
 | meta-llama/Llama-2-7b                       | 31.02         | 27.9                        | 28.1                         | 29.6                             | 29.3                              | 24.9                               | 46.3                    |
 | meta-llama/Llama-2-13b                      | 31.3          | 28.3                        | 29.3                         | 30.6                             | 29.2                              | 26.6                               | 43.8                    |
-| BhabhaAI/Gajendra-v0.1                    | 31.47         | 27.4                        | 27.9                         | 33.0                             | 36.7                              | 26.6                               | 37.2                    |
-| ai4bharat/Airavata                          | 32.02         | 28.1                        | 28.5                         | 33.0                             | 32.0                              | 25.6                               | 44.9                    |
+| BhabhaAI/Gajendra-v0.1-7B                    | 31.47         | 27.4                        | 27.9                         | 33.0                             | 36.7                              | 26.6                               | 37.2                    |
+| ai4bharat/Airavata-7B                          | 32.02         | 28.1                        | 28.5                         | 33.0                             | 32.0                              | 25.6                               | 44.9                    |
 | sarvamai/sarvam-2b-v0.5                     | 37.7          | 28.3                        | 29.1                         | 46.2                             | 45.8                              | 32.3                               | 44.5                    |
-| AryaBhatta-GemmaOrca-Merged-8.5B-SFT        | 39.43         | 31.4                        | 35.9                         | 42.6                             | 46.5                              | 32.7                               | 47.5                    |
+| AryaBhatta-GemmaOrca-Merged-8.5B        | 39.43         | 31.4                        | 35.9                         | 42.6                             | 46.5                              | 32.7                               | 47.5                    |
 | meta-llama/Meta-Llama-3-8b                  | 39.83         | 30.2                        | 37.3                         | 45.7                             | 45.9                              | 34.5                               | 45.4                    |
 | CohereForAI/Aya-23-8B                       | 40.18         | 29.8                        | 36.8                         | 48.4                             | 48.3                              | 33.9                               | 43.9                    |
 | meta-llama/Llama-3.1-8B                     | 40.42         | 29.9                        | 37.3                         | 46.9                             | 50.2                              | 34.3                               | 43.9                    |
-| AryaBhatta-GemmaUltra-Merged-8.5B-Ift       | 41.18         | 34.6                        | 37.5                         | 45.5                             | 48.9                              | 33.4                               | 47.2                    |
+| AryaBhatta-GemmaUltra-Merged-8.5B       | 41.18         | 34.6                        | 37.5                         | 45.5                             | 48.9                              | 33.4                               | 47.2                    |
 | meta-llama/Llama-3.1-8B-Instruct            | 41.8          | 32.9                        | 38.9                         | 48.0                             | 50.5                              | 36.2                               | 44.3                    |
 | **Llama-3-Nanda-10B-Chat**                  | **47.88**     | **38.6**                    | **44.3**                     | **56.4**                         | **59.6**                          | **40.3**                           | **48.1**                |
 
@@ -213,13 +212,13 @@ English-only evaluation results:
 |---------------------------------------------------|-------------|-------------------|------------------------|------------------|-------------------------|
 | Google/Gemma-2-9b-base                            | 33.03       | 28.4              | 33.1                   | 24.2             | 46.4                    |
 | sarvamai/sarvam-2b-v0.5                           | 42.83       | 29.4              | 61.7                   | 42.5             | 37.7                    |
-| ai4bharat/Airavata                                | 44.53       | 31.7              | 65.5                   | 40.1             | 40.8                    |
+| ai4bharat/Airavata-7B                                | 44.53       | 31.7              | 65.5                   | 40.1             | 40.8                    |
 | meta-llama/Llama-2-7b                             | 46.00       | 31.10             | 72.90                  | 40.50            | 39.50                   |
-| ai4bharat/Gajendra-v0.1                           | 48.55       | 37.5              | 73.0                   | 43.0             | 40.7                    |
+| ai4bharat/Gajendra-v0.1-7B                           | 48.55       | 37.5              | 73.0                   | 43.0             | 40.7                    |
 | CohereForAI/Aya-23-8B                             | 49.63       | 34.0              | 73.9                   | 45.2             | 45.4                    |
 | meta-llama/Llama-2-13b                            | 51.20       | 36.90             | 77.70                  | 46.10            | 44.10                   |
-| AryaBhatta-GemmaOrca-Merged-8.5B-SFT              | 53.03       | 40.4              | 72.4                   | 45.4             | 53.9                    |
-| AryaBhatta-GemmaUltra-Merged-8.5B-Ift             | 53.65       | 42.5              | 74.1                   | 45.4             | 52.6                    |
+| AryaBhatta-GemmaOrca-Merged-8.5B              | 53.03       | 40.4              | 72.4                   | 45.4             | 53.9                    |
+| AryaBhatta-GemmaUltra-Merged-8.5B             | 53.65       | 42.5              | 74.1                   | 45.4             | 52.6                    |
 | meta-llama/Meta-Llama-3-8b                        | 53.65       | 39.2              | 79.1                   | 52.3             | 44.0                    |
 | meta-llama/Llama-3.1-8B                           | 54.33       | 39.7              | 78.9                   | 53.5             | 45.2                    |
 | meta-llama/Llama-3.1-8B-Instruct                  | 57.53       | 41.8              | 79.3                   | 55.1             | 53.9                    |
