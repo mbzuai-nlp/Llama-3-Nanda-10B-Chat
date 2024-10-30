@@ -20,7 +20,7 @@ The code below is tested on `transformers==4.28.0`.
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
-model_path = "MBZUAI/masafi"
+model_path = "MBZUAI/Llama-3-Nanda-10B-Chat"
 device = "cuda" if torch.cuda.is_available() else "cpu"
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 model = AutoModelForCausalLM.from_pretrained(model_path, device_map="auto", trust_remote_code=True)
