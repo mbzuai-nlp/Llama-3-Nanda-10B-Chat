@@ -80,7 +80,7 @@ print(get_response(text))
 
 ### Model Details:
 
-- **Developed by:** [Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)](https://mbzuai.ac.ae/), [Inception](https://www.inceptioniai.org/en/), and [Cerebras Systems](https://www.cerebras.net/)
+- **Developed by:** [Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)](https://mbzuai.ac.ae/), [Inception](https://www.inceptionai.ai/), and [Cerebras Systems](https://www.cerebras.net/)
 - **Language(s) (NLP):** Hindi (and English)
 - **License:** Llama 3
 - **Input:** Text-only data
