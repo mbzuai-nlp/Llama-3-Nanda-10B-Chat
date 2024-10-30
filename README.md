@@ -1,8 +1,4 @@
----
-license: llama3
-language:
-- hi
----
+
 # Llama-3-Nanda-10B-Chat
 
 <!-- Provide a quick summary of what the model is/does. -->
