@@ -25,7 +25,7 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 model = AutoModelForCausalLM.from_pretrained(model_path, device_map="auto", trust_remote_code=True)
 
-prompt_hindi = "<|begin_of_text|><|start_header_id|>Role: User<|end_header_id|><|start_header_id|>Instructions: Please answer the question<|end_header_id|><|start_header_id|>Input:{Question}<|end_header_id|><|start_header_id|>Response:<|end_header_id|><|eot_id|>"
+prompt_hindi = "<|begin_of_text|><|start_header_id|>system<|end_header_id|>You are a helpful AI assistant.<|eot_id|><|start_header_id|>user<|end_header_id|>{Question}<|eot_id|><|start_header_id|>assistant<|end_header_id|>"
 
 def get_response(text,tokenizer=tokenizer,model=model):
     input_ids = tokenizer(text, return_tensors="pt").input_ids
